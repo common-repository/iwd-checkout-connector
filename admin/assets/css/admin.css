@@ -1,0 +1,78 @@
+input.iwd_admin_input{
+	width: 350px;
+}
+tr[data-gateway_id='iwd_gateway_pay'],
+tr[data-gateway_id='iwd_gateway_zero_payment'],
+tr[data-gateway_id='iwd_gateway_custom'],
+tr[data-gateway_id='iwd_gateway_banktransfer'],
+tr[data-gateway_id='iwd_gateway_cash_on_delivery'],
+tr[data-gateway_id='iwd_gateway_check_or_money_order'],
+tr[data-gateway_id='iwd_gateway_purchaseorder'],
+tr[data-gateway_id='iwd_gateway_multiple_offline']{
+	display: none;
+}
+#iwd-connector-connection-test, .dominate_newsletter_subscribers {
+	min-width: 160px;
+	background: #f3f5f6;
+	color: #016087;
+	border: 1px solid #007cba;
+	line-height: 2;
+	border-radius: 3px;
+}
+#iwd-connector-connection-test:hover, .dominate_newsletter_subscribers:hover{
+	cursor: pointer;
+	border-color: #016087;
+	color: #016087;
+}
+
+.dominate_newsletter_subscribers{
+	display: inline-block;
+	padding: 1px 6px;
+	text-align: center;
+	text-decoration: none;
+}
+#iwd-connector-connection-test.success{
+	border-color: #008000;
+	color: #008000;
+	outline: none;
+}
+#iwd-connector-connection-test.error{
+	border-color: #ff0000;
+	color: #ff0000;
+}
+#iwd-connector-connection-test.error:active, #iwd-connector-connection-test.error:focus{
+	border: 1px solid #ff0000;
+	outline: none;
+}
+.blockUI.blockOverlay::before {
+	height: 1em;
+	width: 1em;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-right: -.5em;
+	margin-top: -.5em;
+	content: '';
+	-webkit-animation: spin 1s ease-in-out infinite;
+	animation: spin 1s ease-in-out infinite;
+	background: url(../images/loader.svg) center center;
+	background-size: cover;
+	line-height: 1;
+	text-align: center;
+	font-size: 2em;
+	color: rgba(0, 0, 0, .75)
+}
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
+
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
